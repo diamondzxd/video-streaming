@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming</title>
+    <style>
+        body {
+            margin: 40px auto;
+            max-width: 650px;
+            background-color: #444;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+</head>
+<body>
+    <video id="videoPlayer" width="650" playsinline controls>
+        <source src="/video" type="video/mp4">
+    </video>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script>
+        // Change the second argument to your options:
+        // https://github.com/sampotts/plyr/#options
+        const player = new Plyr('video', {captions: {active: true}});
+
+        // Expose player so it can be used from the console
+        window.player = player;
+
+    </script>
+</body>
+</html>

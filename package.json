@@ -1,0 +1,23 @@
+{
+  "name": "video-streaming",
+  "version": "1.0.0",
+  "description": "Video Streaming Backend which streams the video over 1 MB data chunks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diamondzxd/video-streaming.git"
+  },
+  "author": "diamondzxd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diamondzxd/video-streaming/issues"
+  },
+  "homepage": "https://github.com/diamondzxd/video-streaming#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
